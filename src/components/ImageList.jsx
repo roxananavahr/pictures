@@ -1,8 +1,15 @@
-import React from 'react'
+import ImageaShow from "./ImageShow"
+import './ImageList.css'
 
-const ImageList = () => {
+const ImageList = ({image}) => {
+  const rederImage = image.map((image) =>{
+    return <ImageShow key={image.id} image={image} />
+  
+  })
   return (
-    <div>ImageList</div>
+    <div className="image-list">
+    {renderImage}
+    </div>
   )
 }
 

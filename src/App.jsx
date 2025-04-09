@@ -1,8 +1,10 @@
 import SearchBar from "./components/SearchBar"
 import ImageList from "./components/ImageList"
+import searchImage from "./api"
+
 
 function App() {
-  
+  //searchImage('cars')
 
   return (
     <>
